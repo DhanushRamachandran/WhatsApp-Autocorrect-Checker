@@ -65,23 +65,3 @@ for word in pure_words_set:
 with open(r"C:\Users\sudha\Desktop\dhanush\Personal DS\NLP/word_prob_json.json","w",encoding="utf-8") as f:
     json.dump(word_prob,f,indent = 2)
     f.close()
-
-
-# text preprocessing
-
-# spell lookup builder
-
-# Evaluation
-
-# Autocorrect
-
-# Evaluation
-
-# suggestion
-
-# Evaluation
-
-# App to type with spell correction and auto correct.
-
-# App feature to edit the working of spell detector and auto correct.
-
