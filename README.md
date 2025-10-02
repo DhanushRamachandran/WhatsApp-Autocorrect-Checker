@@ -55,7 +55,7 @@ Suggestions are sorted according to probability, ensuring that the most likely o
 By default, the top 3 suggestions per word are returned to the user, although this number can be configured manually.
 
 This combination of string-level corrections and semantic similarity ensures that the system is both accurate and user-adaptive, providing suggestions that are contextually meaningful and reflective of the user’s own vocabulary.
-Here are some snapshots attached <img width="958" height="452" alt="image" src="https://github.com/user-attachments/assets/7eaaa42a-9bda-4571-bd40-f41cafe4b817" /> <img width="953" height="406" alt="image" src="https://github.com/user-attachments/assets/70cdb09d-9128-4b1a-a35f-c95542f03d85" /> <img width="926" height="404" alt="image" src="https://github.com/user-attachments/assets/3d35de10-49d7-4a32-a5fb-9bd0c3db8fde" /> Viewing, expanding all suggestions: <img width="766" height="406" alt="image" src="https://github.com/user-attachments/assets/88e8e5b0-3483-468e-b000-3b19f4db9b73" />
+
 
 The word recommended as a suggestion is user-specific, meaning your words are updated in the backend probabilistic model that determines the preference of listing.
 
