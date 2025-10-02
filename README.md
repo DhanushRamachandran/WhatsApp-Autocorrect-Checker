@@ -59,6 +59,6 @@ This combination of string-level corrections and semantic similarity ensures tha
 
 The word recommended as a suggestion is user-specific, meaning your words are updated in the backend probabilistic model that determines the preference of listing.
 
-CONCLUSION
+# CONCLUSION
 
 The WhatsApp Autocorrect Checker demonstrates a robust approach to detecting and correcting text errors in real-world conversations. By combining probabilistic modeling, semantic similarity, and string-level operations, the system is capable of providing personalized, context-aware suggestions. The dynamic nature of the backend dataset ensures that the model continuously adapts to the user’s vocabulary and typing patterns, resulting in increasingly accurate and user-specific recommendations over time. This project highlights the practical application of NLP techniques in enhancing communication efficiency and user experience while adhering to sound software design principles.
