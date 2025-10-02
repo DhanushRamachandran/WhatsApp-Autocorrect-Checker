@@ -22,8 +22,8 @@ NOTE: misspelled words are also present indicating previous interaction with the
 
 # How the Suggestion Algorithm Works?
 
-
 The core principle behind the autocorrect system is that both misspelled words and semantically similar words should be considered as potential suggestions. To achieve this, the algorithm leverages NLP techniques to identify similar words and applies a set of robust string manipulation operations to handle spelling errors.
+
 The algorithm incorporates multiple strategies for generating potential word corrections, based on permutations and combinations of the original input word:
 
 Addition: Adding one or more characters at different positions in the word to form valid alternatives.
@@ -34,8 +34,7 @@ Replacement: Replacing individual characters to correct typos, often targeting c
 
 Swapping: Swapping adjacent characters to handle cases where letters are accidentally reversed during typing.
 
-
-# Class-wise Functional Breakdown
+Class-wise Functional Breakdown
 
 The project is organized into modular classes, each addressing a specific aspect of the problem:
 
@@ -48,26 +47,17 @@ SpellSuggestion: Acts as a wrapper that orchestrates the process. It aggregates 
 Suggestion Ranking
 
 Once potential suggestions are generated:
-Each candidate word is matched against the backend probabilistic dataset (word_prob_json.json), which stores the likelihood of each word based on previous interactions and a large vocabulary dataset.
-Suggestions are sorted according to probability, ensuring that the most likely or most relevant words are prioritized.
 
+Each candidate word is matched against the backend probabilistic dataset (word_prob_json.json), which stores the likelihood of each word based on previous interactions and a large vocabulary dataset.
+
+Suggestions are sorted according to probability, ensuring that the most likely or most relevant words are prioritized.
 
 By default, the top 3 suggestions per word are returned to the user, although this number can be configured manually.
 
 This combination of string-level corrections and semantic similarity ensures that the system is both accurate and user-adaptive, providing suggestions that are contextually meaningful and reflective of the user’s own vocabulary.
+Here are some snapshots attached <img width="958" height="452" alt="image" src="https://github.com/user-attachments/assets/7eaaa42a-9bda-4571-bd40-f41cafe4b817" /> <img width="953" height="406" alt="image" src="https://github.com/user-attachments/assets/70cdb09d-9128-4b1a-a35f-c95542f03d85" /> <img width="926" height="404" alt="image" src="https://github.com/user-attachments/assets/3d35de10-49d7-4a32-a5fb-9bd0c3db8fde" /> Viewing, expanding all suggestions: <img width="766" height="406" alt="image" src="https://github.com/user-attachments/assets/88e8e5b0-3483-468e-b000-3b19f4db9b73" />
 
-Here are some snapshots attached 
-<img width="958" height="452" alt="image" src="https://github.com/user-attachments/assets/7eaaa42a-9bda-4571-bd40-f41cafe4b817" />
-<img width="953" height="406" alt="image" src="https://github.com/user-attachments/assets/70cdb09d-9128-4b1a-a35f-c95542f03d85" />
-<img width="926" height="404" alt="image" src="https://github.com/user-attachments/assets/3d35de10-49d7-4a32-a5fb-9bd0c3db8fde" />
-Viewing, expanding all suggestions:
-
-
-
-<img width="766" height="406" alt="image" src="https://github.com/user-attachments/assets/88e8e5b0-3483-468e-b000-3b19f4db9b73" />
-
-The word recommended  as a suggestion is user-specific, meaning your words are updated in the backend probabilistic model that determines the preference of listing.
-
+The word recommended as a suggestion is user-specific, meaning your words are updated in the backend probabilistic model that determines the preference of listing.
 
 CONCLUSION
 
